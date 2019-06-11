@@ -5,6 +5,9 @@
     "keywords": ["dbal", "database", "persistence", "queryobject"],
     "homepage": "http://www.doctrine-project.org",
     "license": "MIT",
+    "replace": {
+        "doctrine/dbal": "2.5.*"
+    },
     "require": {
         "php": ">=5.3.2",
         "doctrine/common": ">=2.4,<2.8-dev"
