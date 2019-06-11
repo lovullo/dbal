@@ -62,6 +62,8 @@ class SQLAnywhereStatement implements IteratorAggregate, Statement
      */
     private $stmt;
 
+    private $boundValues = [];
+
     /**
      * Constructor.
      *
@@ -93,6 +95,8 @@ class SQLAnywhereStatement implements IteratorAggregate, Statement
      */
     public function bindParam($column, &$variable, $type = null, $length = null)
     {
+        $this->boundValues[$column] = &$variable;
+
         switch ($type) {
             case PDO::PARAM_INT:
             case PDO::PARAM_BOOL:
