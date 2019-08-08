@@ -6,7 +6,7 @@
     "homepage": "http://www.doctrine-project.org",
     "license": "MIT",
     "replace": {
-        "doctrine/dbal": "2.5.*"
+        "doctrine/dbal": "2.*"
     },
     "require": {
         "php": ">=5.3.2",
